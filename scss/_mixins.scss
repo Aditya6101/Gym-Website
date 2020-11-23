@@ -1,0 +1,14 @@
+@mixin width {
+  max-width: 90%;
+  margin: 0px auto;
+}
+@mixin flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin grid {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+}

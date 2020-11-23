@@ -1,0 +1,66 @@
+@media screen and (max-width: 860px) {
+  .section--hero {
+    background-color: $black-600;
+    background-image: url("../Images/pexels-victor-freitas-685530.jpg");
+    background-blend-mode: overlay;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-img {
+    display: none;
+  }
+  .hero-description {
+    flex-grow: 1;
+  }
+  .section--description {
+    height: auto;
+    &__columns {
+      flex-direction: column;
+    }
+    .last-p {
+      padding-bottom: 2em;
+    }
+  }
+  .section--statics {
+    &__container {
+      flex-direction: column;
+      height: 80%;
+    }
+  }
+  .section--reviews {
+    .cards-container {
+      @include grid;
+      grid-template-columns: 5% 1fr 5%;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        ". card-1 ."
+        ". card-2 ."
+        ". card-3 ."
+        ". card-4 .";
+    }
+  }
+  .section--mobile {
+    height: auto;
+    &__container {
+      // flex-direction: column;
+      .mobile-container {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .section--footer {
+    height: auto;
+    &__container {
+      .row-1 {
+        flex-direction: column;
+        .footer-icons {
+          margin: 2em 0em;
+        }
+      }
+      .row-2 {
+        flex-direction: column;
+      }
+    }
+  }
+}
